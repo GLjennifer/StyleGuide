@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="styleGuideApp">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Description" content="#"> <!-- (Example: Compelling description to be displayed on Search Engine) -->
+		<meta name="author" content="#"> <!-- (example: Developers Name) -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CSS Style Guide Worksheet</title>
+<!-- (Extrenal) Default Style Sheets =========== -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="http://gl-dev-staticweb.s3.amazonaws.com/blimp.css">
+		<link rel="stylesheet" type="text/css" href="http://gl-dev-staticweb.s3.amazonaws.com/maui.css">	
+<!-- Style Sheets ============================== -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- Additional Style Sheets =================== -->
+		<!-- AngularJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+		<!-- Firebase -->
+		<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+	</head>
+	<body  ng-controller="styleController">
+<!--[if IE]><div style='clear: both; height: 200px; width: 4000px; background-color: #ffffff; padding:15px; position: relative;'><h1>Your Browser is not supported</h1><p>Minimum requirement to view this page:<br>Internet Explorer 9 / Google Chrome / Firefox / Safari</p></div><![endif]-->
+<!-- Content starts here ======================= -->
+
+<div class="container">
+
+
+	<button class="btn btn-primary" ng-click="addnewproject=!addnewproject; editexistingproject=false">Create New Project</button>
+	<button class="btn btn-primary" ng-click="editexistingproject=!editexistingproject; addnewproject=false">Edit Existing Project</button>
+	<br/><br/>
+
+	<div ng-show="editexistingproject">
+		<h3>Existing Projects</h3>
+		<div ng-repeat="a in allStyles">
+			<br/>
+			<a href="/projects/#/{{a.$id}}"><button class="btn btn-primary" >{{a.projectname}}</button></a>
+			<button class="btn btn-danger" ng-click="allStyles.$remove(a)">x</button>
+		</div>
+
+	</div>
+
+	<div ng-view></div>
+
+</div><!--/container-->
+
+
+
+
+
+
+<!-- Default Scripts =========================== -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="http://gl-dev-staticweb.s3.amazonaws.com/scrollto.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/jscolor/jscolor.js"></script>
+<!-- Custom Scripts below this line ============ -->
+
+	</body>
+</html>

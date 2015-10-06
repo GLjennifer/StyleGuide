@@ -1,0 +1,173 @@
+
+/* google.com/fonts import files go above this line ^
+
+=== Project Info =====
+Project:	
+Edit date:
+
+======= Color ========
+Primary Color: 
+Secondary Color: 
+Third Color: 
+Grey:
+
+===== Typography ======
+Font Family:
+Weights:
+
+*/
+
+/* Nav / Menus
+================= */
+
+
+/* Header
+================= */
+.name-of-item>h4{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: normal;
+}
+h1, h2, h3, h4, h5{
+	color: mediumvioletred;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 30px
+}
+
+/* Content
+================= */
+.colorbox{
+	width: 200px;
+	height: 200px;
+	border: black solid 2px;
+}
+input[type='text']{
+	width: 100%;
+}
+.row{
+	margin: 20px;
+}
+.sample-box{
+	border: 2px solid black;
+	padding: 15px;
+	min-height: 100px;
+}
+.name-of-item{
+	height: 40px;
+	background-color: #747474;
+	color: white;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+}
+.yellow{
+	color: yellow;
+}
+.btn-gray{
+	color: #fff;
+	background-color: #747474;
+	border-color: #454545;
+}
+.btn-gray:hover{
+	color: #fff;
+	background-color: #515151;
+}
+code {
+	font-family: monospace;
+}
+
+div[ng-repeat="h in headers"]>div[class^='col-'] {
+	/*display: inline-block;*/
+	/*float: none;*/
+	/*position: absolute;*/
+	margin-bottom: 50px;
+}
+/* Footer
+================= */
+
+
+/**********************************************************
+Media Querys (480px, 768px, 990px, 1200px, 1500px, 2000px)
+***********************************************************/
+
+/* Smaller than
+================= */
+
+/* Applied to resolutions less than 2000 (3x) */
+	@media (max-width: 2000px) {
+
+	}
+
+/* Applied to resolutions less than 1740 (2x) */
+	@media (max-width: 1740px) {
+
+	}
+
+/* Applied to resolutions less than 1500 (Xl) */
+	@media (max-width: 1500px) {
+
+	}
+
+/* Applied to resolutions less than 1200 (lg) */
+	@media (max-width: 1200px) {
+
+	}
+
+/* Applied to resolutions less than 990 (md) */
+	@media (max-width: 990px) {
+
+	}
+
+/* Applied to resolutions less than 768 (sm) */
+	@media (max-width: 768px) {
+
+	}
+
+/* Applied to resolutions less than 480 (XS) */
+	@media (max-width: 480px) {
+
+	}
+
+/* Larger than
+================= */
+
+/* Applied to resolutions larger than 2000 (3x) */
+	@media (min-width: 2001px) {
+
+	}
+
+/* Applied to resolutions larger than 1500 (2x) */
+	@media (min-width: 1501px) {
+
+	}
+
+/* Applied to resolutions larger than 1200 (xl) */
+	@media (min-width: 1201px) {
+
+	}
+
+/* Applied to resolutions larger than 990 (lg) */
+	@media (min-width: 991px) {
+
+	}
+
+/* Applied to resolutions larger than 768 (sm) */
+	@media (min-width: 769px) {
+
+	}
+
+/* Applied to resolutions larger than 480 (xs) */
+	@media (min-width: 481px) {
+
+	}
+
+/***************************************
+Default Style Sheet created as part of - The Maui Toolbox
+For more information visit: www.mauitoolbox.com
+pub-20150501
+***************************************/
